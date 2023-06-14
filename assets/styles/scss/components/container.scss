@@ -1,6 +1,11 @@
 .container {
+    $width: 1110px;
+    $max-width: calc($width + (2 * 1rem));
+
+    position: relative;
+
     width: 100%;
-    max-width: 1110px + 2 * $regular-font-size;
+    max-width: $max-width;
 
     margin: 0 auto;
     padding: 0 1rem;
