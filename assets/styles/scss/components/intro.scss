@@ -1,0 +1,33 @@
+.intro {
+    height: 100vh;
+
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/intro/bg-intro.jpg');
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        height: 100vh;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__subtitle {
+        font-size: $font-size-xs;
+        margin-bottom: 2.25rem;
+    }
+
+    &__title {
+        margin-bottom: 2.25rem;
+    }
+
+    &__text {
+        margin-bottom: 2.75rem;
+    }
+}

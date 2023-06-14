@@ -1,0 +1,43 @@
+.nav {
+    $nav-size: 2.5rem;
+
+    $span-width: 1.125rem;
+    $span-height: .125rem;
+
+    $span-offset: 0.225rem;
+
+    position: relative;
+
+    width: $nav-size;
+    height: $nav-size;
+
+    border-radius: $nav-size / 2;
+
+    background-color: $white-color;
+
+    & span,
+    & span::after,
+    & span::before {
+        content: '';
+
+        position: absolute;
+        top: $nav-size / 2 - $span-height / 2;
+        left: $nav-size / 2 - $span-width / 2;
+
+        display: block;
+        width: $span-width;
+        height: $span-height;
+
+        background-color: $black-color;
+    }
+
+    & span::after {
+        top: $span-offset + $span-height;
+        left: 0;
+    }
+
+    & span::before {
+        top: -$span-offset - $span-height;
+        left: 0;
+    }
+}

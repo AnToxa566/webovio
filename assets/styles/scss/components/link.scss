@@ -1,0 +1,12 @@
+.link {
+    color: $secondary-color;
+    font-weight: $bold-font-weight;
+
+    &--yellow {
+        color: $yellow-color;
+    }
+
+    &::before {
+        content: '> ';
+    }
+}
