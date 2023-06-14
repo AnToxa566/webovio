@@ -1,13 +1,15 @@
 .clients {
+    padding: 3.5rem 0 3.5rem 4rem;
+
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15);
+    background-color: $white-color;
+
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 3.5rem 0 3.5rem 4rem;
-
-        box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15);
-        background-color: $white-color;
-        border-radius: 0.125rem;
     }
 }

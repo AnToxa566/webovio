@@ -2,11 +2,21 @@
     $width: 1110px;
     $max-width: calc($width + (2 * 1rem));
 
-    position: relative;
-
     width: 100%;
     max-width: $max-width;
 
     margin: 0 auto;
     padding: 0 1rem;
+
+    &__inner {
+        width: 100%;
+        max-width: $width;
+    }
+
+    &--right {
+        max-width: calc((100vw - $max-width) / 2 + $max-width - 1.5rem);
+
+        margin: 0 0 0 auto;
+        padding: 0;
+    }
 }
