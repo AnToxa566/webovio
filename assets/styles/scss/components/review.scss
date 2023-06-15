@@ -20,6 +20,8 @@
         .review { 
             &__text {
                 font-size: $font-size-md;
+                line-height: $regular-line-height;
+
                 margin-bottom: 3.125rem;
             }
         }

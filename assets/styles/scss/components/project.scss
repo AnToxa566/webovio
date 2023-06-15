@@ -1,0 +1,50 @@
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        &-wrapper {
+            position: relative;
+            max-width: 58%;
+        }
+        
+        width: 100%;
+        height: auto;
+    }
+
+    &__review {
+        position: absolute;
+
+        bottom: -12%;
+        right: -5%;
+
+        max-width: 60%;
+    }
+
+    &__content {
+        max-width: 35%;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        margin-bottom: 5.625rem;
+
+        p {
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        .project {
+            &__review {        
+                left: -5%;
+            }
+        }
+    }
+}

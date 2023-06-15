@@ -1,0 +1,13 @@
+.notation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        max-width: 32%;
+    }
+
+    &__text {
+        max-width: 57%;
+    }
+}
