@@ -7,7 +7,7 @@
 
         width: $avatar-size;
         height: $avatar-size;
-        border-radius: $avatar-size / 2;
+        border-radius: calc($avatar-size / 2);
 
         margin-right: 0.875rem;
 
@@ -34,7 +34,7 @@
                 width: $avatar-size;
                 height: $avatar-size;
                 
-                border-radius: $avatar-size / 2;
+                border-radius: calc($avatar-size / 2);
         
                 margin-right: 1.875rem;
             }

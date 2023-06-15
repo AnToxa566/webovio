@@ -84,6 +84,9 @@ body {
 .page__projects {
   margin-bottom: 11.875rem;
 }
+.page__targets {
+  margin-bottom: 9.375rem;
+}
 
 .container {
   width: 100%;
@@ -118,6 +121,11 @@ body {
   font-size: 2.25rem;
   line-height: 130%;
 }
+.title--h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 140%;
+}
 
 .link {
   color: #d4d6d4;
@@ -128,6 +136,9 @@ body {
 }
 .link::before {
   content: "> ";
+}
+.link:hover {
+  color: #ffd723;
 }
 
 .divider {
@@ -349,6 +360,37 @@ body {
 }
 .project--reverse .project__review {
   left: -5%;
+}
+
+.targets__div {
+  margin-bottom: 9.375rem;
+}
+.targets__title {
+  margin-bottom: 3.75rem;
+}
+.targets__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.875rem;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.875rem;
+}
+.target__content {
+  margin-bottom: 1.875rem;
+}
+.target__title {
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.target__text {
+  font-size: 0.875rem;
+  line-height: 190%;
 }
 
 /*# sourceMappingURL=style.css.map */

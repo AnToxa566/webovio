@@ -11,4 +11,10 @@
         font-size: $font-size-lg;
         line-height: $h2-line-height;
     }
+
+    &--h3 {
+        font-size: $font-size-md;
+        font-weight: $medium-font-weight;
+        line-height: $h3-line-height;
+    }
 }

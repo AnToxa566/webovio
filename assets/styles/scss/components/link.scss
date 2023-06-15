@@ -9,4 +9,8 @@
     &::before {
         content: '> ';
     }
+
+    &:hover {
+        color: $yellow-color;
+    }
 }

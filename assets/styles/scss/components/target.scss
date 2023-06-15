@@ -1,0 +1,22 @@
+.target {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    padding: 1.875rem;
+
+    &__content {
+        margin-bottom: 1.875rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+    }
+
+    &__text {
+        font-size: $font-size-xs;
+        line-height: $large-line-height;
+    }
+}
