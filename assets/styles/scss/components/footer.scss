@@ -1,0 +1,91 @@
+.footer {
+    color: $light-color;
+    background-color: $footer-bg-color;
+    background-image: url('../img/footer/footer-bg.png');
+
+    &__inner {
+        padding-top: 19.375rem;
+    }
+
+    &__top {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__col {
+        &-name {
+            margin-bottom: 2.25rem;
+        }
+
+        &-value {
+            color: $white-color;
+            font-weight: $bold-font-weight;
+        }
+    }
+
+    &__div {
+        margin-top: 3.75rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 3.75rem;
+
+        &-name {
+            color: $white-color;
+            font-weight: $semi-bold-font-weight;
+
+            text-transform: uppercase;
+
+            margin-bottom: 3.125rem;
+        }
+
+        &-text {
+            margin-bottom: 1.5rem;
+        }
+
+        &-email {
+            color: $white-color;
+            font-size: $font-size-md;
+            font-weight: $bold-font-weight;
+
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $light-color;
+
+        margin-bottom: 1.5rem;
+
+        &:hover {
+            color: $yellow-color;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1.5rem 0;
+    }
+
+    &__logo {
+        max-width: 12.5rem;
+        height: auto;
+    }
+
+    &__copyright {
+        font-size: $font-size-xs;
+    }
+}

@@ -1,22 +1,28 @@
 .container {
     $width: 1110px;
-    $max-width: calc($width + (2 * 1rem));
+    $padding: 1rem;
+    $max-width: calc($width + (2 * $padding));
+
 
     width: 100%;
     max-width: $max-width;
 
     margin: 0 auto;
-    padding: 0 1rem;
-
-    &__inner {
-        width: 100%;
-        max-width: $width;
-    }
+    padding: 0 $padding;
 
     &--right,
     &--left {
         max-width: calc((100vw - $max-width) / 2 + $max-width - 1.5rem);
         padding: 0;
+
+        .container {
+            &__inner {
+                width: 100%;
+                max-width: $max-width;
+                
+                padding: 0 $padding;
+            }
+        }
     }
 
     &--right {
@@ -25,5 +31,11 @@
 
     &--left {
         margin: 0 auto 0 0;
+
+        .container {
+            &__inner {
+                margin-left: auto;
+            }
+        }
     }
 }
