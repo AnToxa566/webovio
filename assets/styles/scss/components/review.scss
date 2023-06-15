@@ -1,0 +1,27 @@
+.review {
+    color: $dark-color;
+    padding: 1.875rem;
+
+    height: fit-content;
+
+    border-radius: .5rem;
+    background-color: $white-color;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15);
+
+    &__text {
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+
+    &--lg {
+        border-radius: 0;
+        padding: 7.5rem 2.5rem 3.75rem 2.5rem;
+
+        .review { 
+            &__text {
+                font-size: $font-size-md;
+                margin-bottom: 3.125rem;
+            }
+        }
+    }
+}

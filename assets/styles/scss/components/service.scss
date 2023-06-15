@@ -1,0 +1,29 @@
+.service {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 42%;
+    }
+
+    &__right {
+        max-width: 43%;
+        transform: translateY(-25%);
+    }
+
+    &__subtitle {
+        font-size: $font-size-xs;
+        margin-bottom: 1.75rem;
+        color: $dark-color;
+    }
+
+    &__title {
+        margin-bottom: 2.25rem;
+    }
+
+    &__text {
+        margin-bottom: 2.75rem;
+    }
+}

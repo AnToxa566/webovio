@@ -74,6 +74,7 @@ body {
   z-index: 1;
 }
 .page__clients {
+  position: relative;
   z-index: 2;
   transform: translateY(-50%);
 }
@@ -95,6 +96,7 @@ body {
 }
 
 .title {
+  color: #4d533c;
   font-weight: 700;
 }
 .title--h1 {
@@ -174,6 +176,7 @@ body {
   margin-bottom: 2.25rem;
 }
 .intro__title {
+  color: white;
   margin-bottom: 2.25rem;
 }
 .intro__text {
@@ -181,7 +184,7 @@ body {
 }
 
 .clients {
-  padding: 3.5rem 0 3.5rem 4rem;
+  padding: 3.5rem 0;
   box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   border-top-left-radius: 0.125rem;
@@ -191,6 +194,85 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 4rem;
+}
+
+.service__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.service__left {
+  max-width: 42%;
+}
+.service__right {
+  max-width: 43%;
+  transform: translateY(-25%);
+}
+.service__subtitle {
+  font-size: 0.875rem;
+  margin-bottom: 1.75rem;
+  color: #4d533c;
+}
+.service__title {
+  margin-bottom: 2.25rem;
+}
+.service__text {
+  margin-bottom: 2.75rem;
+}
+
+.review {
+  color: #4d533c;
+  padding: 1.875rem;
+  height: fit-content;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.15);
+}
+.review__text {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.review--lg {
+  border-radius: 0;
+  padding: 7.5rem 2.5rem 3.75rem 2.5rem;
+}
+.review--lg .review__text {
+  font-size: 1.5rem;
+  margin-bottom: 3.125rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+.author__avatar {
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 1.4375rem;
+  margin-right: 0.875rem;
+  box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+}
+.author__name {
+  color: #4d533c;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.author__position {
+  font-size: 0.875rem;
+  color: #152934;
+}
+.author--lg .author__avatar {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 2.8125rem;
+  margin-right: 1.875rem;
+}
+.author--lg .author__name {
+  font-size: 1.5rem;
+  margin-bottom: 0.375rem;
+}
+.author--lg .author__position {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

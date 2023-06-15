@@ -1,0 +1,52 @@
+.author {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        $avatar-size: 2.875rem;
+
+        width: $avatar-size;
+        height: $avatar-size;
+        border-radius: $avatar-size / 2;
+
+        margin-right: 0.875rem;
+
+        box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+    }
+
+    &__name {
+        color: $dark-color;
+        font-weight: $bold-font-weight;
+
+        margin-bottom: 0.25rem;
+    }
+
+    &__position {
+        font-size: $font-size-xs;
+        color: $primary-dark-color;
+    }
+
+    &--lg {
+        .author {
+            &__avatar {
+                $avatar-size: 5.625rem;
+
+                width: $avatar-size;
+                height: $avatar-size;
+                
+                border-radius: $avatar-size / 2;
+        
+                margin-right: 1.875rem;
+            }
+
+            &__name {
+                font-size: $font-size-md;
+                margin-bottom: 0.375rem;
+            }
+        
+            &__position {
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}
