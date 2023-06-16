@@ -75,6 +75,9 @@ body {
 .page__header {
   z-index: 10;
 }
+.page__aside {
+  z-index: 15;
+}
 .page__intro {
   z-index: 1;
 }
@@ -92,6 +95,9 @@ body {
 @media screen and (max-width: 992px) {
   .page__clients {
     transform: translateY(0);
+    margin-bottom: 9.375rem;
+  }
+  .page__service {
     margin-bottom: 9.375rem;
   }
 }
@@ -253,14 +259,14 @@ body {
   }
 }
 
-.nav {
+.burger {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 1.25rem;
   background-color: #fff;
 }
-.nav span, .nav span::after, .nav span::before {
+.burger span, .burger::after, .burger::before {
   content: "";
   position: absolute;
   top: 1.1875rem;
@@ -269,14 +275,27 @@ body {
   width: 1.125rem;
   height: 0.125rem;
   background-color: #000;
+  transition: all 0.1s ease-in;
 }
-.nav span::after {
-  top: 0.35rem;
-  left: 0;
+.burger::after {
+  top: 1.4875rem;
 }
-.nav span::before {
-  top: -0.35rem;
-  left: 0;
+.burger::before {
+  top: 0.8875rem;
+}
+.burger--active {
+  transition: all 0.5s;
+}
+.burger--active span {
+  visibility: hidden;
+}
+.burger--active::after {
+  top: 1.1875rem;
+  transform: rotate(45deg);
+}
+.burger--active::before {
+  top: 1.1875rem;
+  transform: rotate(-45deg);
 }
 
 .intro {
@@ -759,6 +778,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer__content-name, .footer__links {
+    text-align: center;
   }
   .footer__bottom {
     flex-direction: column;

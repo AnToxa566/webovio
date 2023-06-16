@@ -161,6 +161,11 @@
             }
         }
 
+        &__content-name,
+        &__links {
+            text-align: center;
+        }
+
         &__bottom {
             flex-direction: column;
         }
