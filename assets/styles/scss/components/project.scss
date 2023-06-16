@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
 
+    $padding: 2rem;
+    padding-right: $padding;
+
     &__img {
         &-wrapper {
             position: relative;
@@ -41,9 +44,80 @@
     &--reverse {
         flex-direction: row-reverse;
 
+        padding-right: 0;
+        padding-left: $padding;
+
         .project {
             &__review {        
                 left: -5%;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__review {
+            display: none;
+        }
+
+        &__img {
+            &-wrapper {
+                max-width: 50%;
+            }
+        }
+
+        &__content {
+            max-width: 45%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) { // < 768px
+        flex-direction: column;
+
+        $padding: 5rem;
+        padding-right: $padding;
+        
+        &__img {
+            &-wrapper {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &__content {
+            max-width: 100%;
+            padding-left: 2rem;
+        }
+
+        &--reverse {
+            padding-right: 0;
+            padding-left: $padding;
+            
+            .project {
+                &__content {        
+                    padding-right: 2rem;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        padding-right: 0;
+        padding-left: 0;
+
+        $padding: 1rem;
+
+        &__content {
+            padding-right: $padding;
+            padding-left: $padding;
+        }
+
+        &--reverse {            
+            .project {
+                &__content {        
+                    padding-right: $padding;
+                    padding-left: $padding;
+                }
             }
         }
     }

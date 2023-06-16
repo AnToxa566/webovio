@@ -17,4 +17,17 @@
     &__link {
         text-transform: uppercase;
     }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__inner {
+            padding-right: 4.375rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        &__inner {
+            padding-right: 0;
+            text-align: center;
+        }
+    }
 }

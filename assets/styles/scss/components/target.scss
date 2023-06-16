@@ -19,4 +19,8 @@
         font-size: $font-size-xs;
         line-height: $large-line-height;
     }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        padding: 1.2rem;
+    }
 }

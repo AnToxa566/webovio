@@ -10,4 +10,32 @@
     &__text {
         max-width: 57%;
     }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__title {
+            max-width: 45%;
+        }
+    
+        &__text {
+            max-width: 50%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) { // < 768px
+        align-items: flex-start;
+        flex-direction: column;
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    
+        &__text {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        text-align: center;
+    }
 }

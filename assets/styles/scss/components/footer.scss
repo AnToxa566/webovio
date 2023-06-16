@@ -30,9 +30,26 @@
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         margin-top: 3.75rem;
+
+        &-left {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer__div {
+            display: none;
+        }
+
+        &-col {
+            & + & {
+                margin-left: 3rem;
+            }
+        }
 
         &-name {
             color: $white-color;
@@ -87,5 +104,69 @@
 
     &__copyright {
         font-size: $font-size-xs;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__top {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__content {
+            flex-direction: column;
+
+            &-left {
+                justify-content: flex-start;
+            }
+
+            .footer__div {
+                display: block;
+            }
+
+            &-div {
+                display: none;
+            }
+
+            &-right {
+                margin-top: 3.75rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) { // < 768px
+        &__top {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__content {
+            &-left {
+                justify-content: space-around;
+            }
+
+            &-col {
+                margin: 0 1rem;
+
+                & + & {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        &__content {
+            &-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin-bottom: .5rem;
+        }
     }
 }

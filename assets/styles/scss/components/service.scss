@@ -26,4 +26,44 @@
     &__text {
         margin-bottom: 2.75rem;
     }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__inner {
+            align-items: center;
+        }
+    
+        &__left {
+            max-width: 45%;
+        }
+
+        &__right {
+            max-width: 45%;
+            transform: translateY(0);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) { // < 768px
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__left {
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
+    
+        &__right {
+            max-width: 80%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        &__left {
+            text-align: center;
+        }
+    
+        &__right {
+            max-width: 100%;
+        }
+    }
 }

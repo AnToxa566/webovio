@@ -9,9 +9,21 @@
 
     &__inner {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
         align-items: center;
 
         padding-left: 4rem;
+    }
+
+    &__img {
+        margin: 1rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xl) { // < 1200px 
+        &__inner {    
+            padding-left: 0;
+        }
     }
 }

@@ -31,4 +31,20 @@
     &__text {
         margin-bottom: 2.75rem;
     }
+
+    @media screen and (max-width: $breakpoint-xl) { // < 1200px 
+        &__content {    
+            width: 65%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        background-blend-mode: multiply;
+        background-color: rgba($color: $black-color, $alpha: .6);
+
+        &__content {   
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

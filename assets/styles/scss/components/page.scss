@@ -21,4 +21,17 @@
     &__projects {
         margin-bottom: 11.875rem;
     }
+
+    @media screen and (max-width: $breakpoint-lg) { // < 992px
+        &__clients {
+            transform: translateY(0);
+            margin-bottom: 9.375rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) { // < 576px
+        &__projects {
+            margin-bottom: 6rem;
+        }
+    }
 }
